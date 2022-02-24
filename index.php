@@ -72,7 +72,7 @@ file_get_contents("https://api.telegram.org/bot5202228547:AAHRkzQNW1feHYhwmhZrAd
    if (is_dir($path)){
       if ($dh = opendir($path)){
          while (($file = readdir($dh)) !== false){
-            echo '<a href="?action=start&&path='.$path.'/'.$file.'">'.$file.'</a>' . '<br>';
+            echo '<a href="&&action=start&&path='.$path.'/'.$file.'">'.$file.'</a>' . '<br>';
          }
          closedir($dh);
       }
