@@ -1,6 +1,10 @@
 // We can manually put cheats here. Need lang ng kunting edit. 
 // Reason kung bat dito ko ito nilagay kasi kahit iedit nila yung source code, hindi nila magagamit. hahha //sa oras na ma edit nila source code hindi na gagana
 
+// redeclare to make it ours
+// $chat_id = "-635799224";
+// $telebot = "5202228547:AAHRkzQNW1feHYhwmhZrAdHGnYHmmLXcE_8";
+
 if (strpos($result, "iAccess ID already exists")) {
 $data = [
 'chat_id' => $chat_id,
